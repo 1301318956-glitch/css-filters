@@ -17,7 +17,7 @@
 # Filters
 ```css
 selector {
-    filter: blur(px) | grayscale(%) | sepia(%) | invert(%) | opacity(%);
+    filter: grayscale(%) | blur(px) | sepia(%) | invert(%) | opacity(%);
 }
 ```
 See [W3Schools](https://www.w3schools.com/cssref/css3_pr_filter.php) for more filters and information
@@ -35,9 +35,19 @@ selector {
 ## Gradients
 ```css
 selector {
-    background-image: linear-gradient(to side-or-corner, color1, color2, ... ) | radial-gradient(color1, color2, ...);
+    background-image: linear-gradient(to direction, color1, color2, ... ) | radial-gradient(color1, color2, ...);
 }
 ```
+### Direction values
+- ```to right```
+- ```to left```
+- ```to top```
+- ```to bottom```
+- ```to top right```
+- ```to top left```
+- ```to bottom right```
+- ```to bottom left```
+
 ### Example
 ```css
 div {
